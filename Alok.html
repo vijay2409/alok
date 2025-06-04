@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="header">Email Registration Form</span>
+        <form>
+            <br>
+            <br>
+            <label for="username">User Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+            <label for="username">Password:</label>
+            <input type="password" placeholder="Enter your password" required>
+            <br>
+            <br>
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" cols="40" placeholder="Enter your address"
+                required></textarea>
+            <br>
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+            <br>
+            <br>
+            <label for="terms">Select Your Interest Area:</label>
+            <br>
+            <input type="checkbox" id="interest" name="interest" value="games">
+            <label for="games">Games</label>
+            <input type="checkbox" id="interest" name="interest" value="magazine">
+            <label for="magazine">Magazine</label>
+            <input type="checkbox" id="interest" name="interest" value="movie">
+            <label for="movie">Movie</label>
+            <input type="checkbox" id="interest" name="interest" value="computer">
+            <label for="computer">Computer</label>
+        </form>
+    </div>
+    <style>
+        .container {
+            width: 40%;
+            height: auto;
+            padding: 10px;
+            border: solid 1px black;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: underline;
+        }
+
+        br {
+            display: block;
+            margin-bottom: 50px;
+            content: "";
+        }
+    </style>
+</body>
+
+</html>
